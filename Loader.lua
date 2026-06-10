@@ -1,9 +1,5 @@
 -- D9Hub Loader
--- GitHub: https://github.com/твой_аккаунт/D9Hub
+-- Прямая ссылка на Core.lua (замени на свою, когда зальёшь на GitHub)
+local CORE_URL = "https://raw.githubusercontent.com/d9ll/D9Hub/main/Core.lua"
 
-local function fetch(module)
-    return game:HttpGet("https://raw.githubusercontent.com/d9ll/D9Hub/main/" .. module)
-end
-
-local core = loadstring(fetch("Core.lua"))()
--- core уже содержит всё меню
+loadstring(game:HttpGet(CORE_URL))()
